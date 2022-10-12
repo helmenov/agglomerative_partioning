@@ -3,6 +3,7 @@ name = "agglomerative_partitioning"
 version = "0.1.1"
 description = ""
 authors = ["Kotaro SONODA <kotaro1976@gmail.com>"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
