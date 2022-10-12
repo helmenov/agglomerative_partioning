@@ -26,4 +26,27 @@ it return Feature distance table but only between neighboring samples in Image c
 
 it return target class data by samples
 
- 
+# example
+
+Following code make 128 partitions in sample.jpg, reduce its colors and save to 128.jpg
+  
+```{python}
+from agglomerative_partitioning as ap
+
+ImageFileName = 'sample.jpg'
+K = 128
+
+im = np.array(Image.open(ImageFileName))
+nrows = im.shape[0]
+ncols = im.shape[1]
+
+feature = im.reshape((nrows * ncols, -1))
+
+dist = ap.dist_table(feature, nrows, ncols)
+
+target = ap.agglomerative_clustering(feature, dist, K)
+
+ap.KclassImage(K, feature, target, (nrows, ncols))
+```
+
+![sample.jpg] ![128.jpg]

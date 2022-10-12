@@ -4,6 +4,7 @@ version = "0.1.1"
 description = ""
 authors = ["Kotaro SONODA <kotaro1976@gmail.com>"]
 readme = "README.md"
+include = ["sample.jpg", "128.jpg"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
