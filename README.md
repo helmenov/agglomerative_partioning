@@ -53,4 +53,4 @@ target = ap.agglomerative_clustering(feature, dist, K)
 ap.KclassImage(K, feature, target, (nrows, ncols))
 ```
 
-![before](sample.jpg =672x380) ![after](102144.jpg = 672x380)
+![width:300](sample.jpg) ![width:300](102144.jpg)
