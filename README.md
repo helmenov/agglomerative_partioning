@@ -53,6 +53,4 @@ target = ap.agglomerative_clustering(feature, dist, K)
 ap.KclassImage(K, feature, target, (nrows, ncols))
 ```
 
-|original, 1021440partitions | 102144partitions |
-| --- | --- |
-|<img src="sample.jpg", width="30%"/>|<img src="102144.jpg", width="30%"/>|
+![before](sample.jpg =672x380) ![after](102144.jpg = 672x380)
